@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Clash Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="game-container">
+        <h1>Graph Coloring Game</h1>
+        <p> Color a map so that no two adjacent regions share the same color.</p>
+        
+        <!-- Game Controls -->
+         <div id="controls">
+            <div id="control-buttons">
+                <button id="undoButton">Undo Level</button>
+                <button id="solveButton" onclick="solveProblem()">Solve</button>
+                <button id="checkButton" onclick="checkSolution();">Check Solution</button>
+            </div>
+            <p id="hintMessage"></p>
+        </div>
+
+
+        <!-- Score Display -->
+        <div id="score-container">
+            <strong>Score:</strong> <span id="score">0</span>
+        </div>
+
+        
+        <!-- Graph Display -->
+        <div id="graph-container">
+            <svg id="graph" width="300" height="300"></svg>
+        </div>
+        
+        <!-- Colors button display -->
+        <div id="colors" class="colors">
+        </div>
+
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

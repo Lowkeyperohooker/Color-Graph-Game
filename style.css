@@ -1,0 +1,139 @@
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+#game-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #16213e, #0f3460);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  color: #e94560;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #a9a9b8;
+  font-size: 16px;
+  margin: 5px 0 15px;
+}
+
+#controls {
+  margin: 20px 0;
+}
+
+#control-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  background-color: #53354a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#control-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+#control-buttons button:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#score-container {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #f5c518; /* Bright yellow for visibility */
+  text-align: center;
+  font-weight: bold;
+}
+
+#score-container strong {
+  color: #e94560; /* Matches the header color for consistency */
+}
+
+
+
+#graph-container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0f3460;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#graph {
+  background-color: #1a1a2e;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.node {
+  stroke: #e94560;
+  stroke-width: 2px;
+}
+
+#colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.colors button {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.colors button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.colors button:active {
+  transform: scale(1.05);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.colors button.yellow, 
+.colors button.orange {
+  color: black;
+}
+
+#message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5c518;
+  margin-top: 15px;
+}
